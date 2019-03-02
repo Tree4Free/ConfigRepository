@@ -100,8 +100,8 @@ source $ZSH_CUSTOM/aliases
 # Add rbenv
 eval "$(rbenv init -)"
 
-cat $ZSH_CUSTOM/motd | lolcat
- 
+source $ZSH_CUSTOM/scripts/mots.sh
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/roland/.sdkman"
 [[ -s "/Users/roland/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/roland/.sdkman/bin/sdkman-init.sh"
