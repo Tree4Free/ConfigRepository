@@ -55,7 +55,7 @@ ZSH_THEME="robbyrussell"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/.config/zsh-custom
+ZSH_CUSTOM=$HOME/.shell-config/zsh-custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -95,14 +95,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $ZSH_CUSTOM/aliases
-
-# Add rbenv
-eval "$(rbenv init -)"
-
-source $ZSH_CUSTOM/scripts/motd.sh
-
-eval "$(pyenv init -)"
+# Startup script
+source $HOME/.startup-script
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/roland/.sdkman"
