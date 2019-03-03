@@ -100,7 +100,9 @@ source $ZSH_CUSTOM/aliases
 # Add rbenv
 eval "$(rbenv init -)"
 
-source $ZSH_CUSTOM/scripts/mots.sh
+source $ZSH_CUSTOM/scripts/motd.sh
+
+eval "$(pyenv init -)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/roland/.sdkman"
